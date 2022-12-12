@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background: #0194a6;
+    color: #fff;
+}
+
+.qr-textarea {
+    width: 500px;
+    height: 200px;
+    padding: 10px;
+    border: 2px solid #607d8b;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.qr-btn {
+    padding: 10px 12px;
+    border-radius: 3px;
+    border: unset;
+    background: #e4e4e4;
+    cursor: pointer;
+    width: 200px;
+}
+
+@media only screen and (min-width: 600px) {
+    .qr-form p {
+        font-size: 20px
+    }
+    .qr-form form {
+        display: flex;
+        justify-content: center;
+        height: 98vh;
+        align-items: center;
+    }
+    .d-flex {
+        display: flex;
+    }
+    .d-flex.d-cols {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .qr-textarea {
+        width: 300px;
+        height: 100px;
+        padding: 5px;
+    }
+}

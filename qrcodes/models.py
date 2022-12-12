@@ -5,7 +5,7 @@ import os
 
 class QRModel(models.Model):
     text = models.TextField()
-    qr_image = models.ImageField(upload_to='Qr-Images')
+    qr_image = models.ImageField(upload_to='qrcodes')
     created_at = models.DateTimeField(auto_now_add=True, null=True)
 
     def __str__(self):
