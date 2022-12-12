@@ -1,7 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-body {
+* {
     font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
     background: #0194a6;
     color: #fff;
 }
@@ -31,7 +34,7 @@ body {
     }
     .qr-form form {
         display: flex;
-        justify-content: center;
+        justify-content: center !important;
         height: 98vh;
         align-items: center;
     }
