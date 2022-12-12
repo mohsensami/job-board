@@ -16,6 +16,8 @@ def Home(request):
     context = {"is_qr": "false"}
     if request.method == "POST":
         text = request.POST.get('comment')
+        if text == '':
+            return render(request, 'home.html')
         qr_image = "qrcodes/{}.png".format(saveqrimage(text))
         data = QRModel.objects.create(text=text, qr_image=qr_image)
         context.update({"data": data, "is_qr": "true"})

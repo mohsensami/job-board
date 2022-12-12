@@ -11,7 +11,7 @@
 <body>
 <div class="container mt-5">
     <div class="qr-form">
-        <form method="POST">
+        <form class="d-flex d-cols" method="POST">
             {% csrf_token %}
             <div class="text-center mb-2">
                 {% if is_qr == 'true' %}
@@ -20,14 +20,14 @@
             </div>
             <div class="d-flex">
                 <div class="d-flex d-cols">
-                    <textarea class="qr-textarea" cols="15" id="comment" name="comment"></textarea>
                     <p for="comment">Enter URL/Text Here</p>
+                    <textarea class="qr-textarea" cols="15" id="comment" name="comment"></textarea>
                 </div>
                 <div class="d-flex d-cols">
-                    <a href="/media/{{data.qr_image}}" download>
-                        <button class="qr-btn" title="Download Image" type="button">Download Image</button>
-                    </a>
                     <button type="submit" class="qr-btn">Generate Qrcode</button>
+                    <a href="/media/{{data.qr_image}}" download>
+                        <button {% if data == None %} disabled {% endif %} class="qr-btn" title="Download Image" type="button">Download Image</button>
+                    </a>
                 </div>
             </div>
 
