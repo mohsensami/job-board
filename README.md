@@ -37,13 +37,13 @@ open this link on your browser `http://127.0.0.1:8000/`
 <p align="center">
   Home Page
 </p>
-<img src="https://github.com/mohsensami/qr-generator/blob/main/screenshot/screenshot0.png?raw=true">
+<img src="https://github.com/mohsensami/qr-generator/blob/main/screenshot/screenshot1.png?raw=true">
 </td> 
 <td width="50%">
 <br>
 <p align="center">
   Home Page qr
 </p>
-<img src="https://github.com/mohsensami/qr-generator/blob/main/screenshot/screenshot1.png?raw=true">  
+<img src="https://github.com/mohsensami/qr-generator/blob/main/screenshot/screenshot2.png?raw=true">  
 </td>
 </table>
