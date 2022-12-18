@@ -26,3 +26,24 @@ open this link on your browser `http://127.0.0.1:8000/`
 * To Access Admin Page goto `http://127.0.0.1:8000/admin` and enter `username` and `password` of your superuser
 ### 5. See Demo here
 `https://qrcodes.pythonanywhere.com`
+
+### App Preview :
+
+<table width="100%"> 
+<tr>
+<td width="50%">      
+&nbsp; 
+<br>
+<p align="center">
+  Home Page
+</p>
+<img src="https://github.com/mohsensami/qr-generator/blob/main/screenshot/screenshot0.png?raw=true">
+</td> 
+<td width="50%">
+<br>
+<p align="center">
+  Home Page qr
+</p>
+<img src="https://github.com/mohsensami/qr-generator/blob/main/screenshot/screenshot1.png?raw=true">  
+</td>
+</table>
