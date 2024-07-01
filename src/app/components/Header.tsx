@@ -1,10 +1,10 @@
-// import { getSignInUrl, getUser, signOut } from '@workos-inc/authkit-nextjs';
+import { getSignInUrl, getUser, signOut } from '@workos-inc/authkit-nextjs';
 import Link from 'next/link';
 
 export default async function Header() {
-    // const { user } = await getUser();
-    // const signInUrl = await getSignInUrl();
-    const user = '';
+    const { user } = await getUser();
+    const signInUrl = await getSignInUrl();
+
     return (
         <header>
             <div className="container flex items-center justify-between mx-auto my-4">
@@ -13,11 +13,7 @@ export default async function Header() {
                 </Link>
                 <nav className="flex gap-2">
                     {!user && (
-                        <Link
-                            className="rounded-md bg-gray-200 py-1 px-2 sm:py-2 sm:px-4"
-                            // href={signInUrl}
-                            href="/"
-                        >
+                        <Link className="rounded-md bg-gray-200 py-1 px-2 sm:py-2 sm:px-4" href={signInUrl}>
                             Login
                         </Link>
                     )}
@@ -25,7 +21,7 @@ export default async function Header() {
                         <form
                             action={async () => {
                                 'use server';
-                                // await signOut();
+                                await signOut();
                             }}
                         >
                             <button type="submit" className="rounded-md bg-gray-200 py-1 px-2 sm:py-2 sm:px-4">
